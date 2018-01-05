@@ -1,0 +1,9 @@
+<h1> can you see my post index page?</h1>
+<div><% @posts.each do |post| %>
+        <%= post.title %>
+        <%= post.suggestions %>
+        <%= post.alternative_names %>
+          <hr>
+      <% end %>
+
+</div>
