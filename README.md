@@ -31,7 +31,6 @@
 -add request
 
 ## to dos
-- CRUD for Posts
 - Search Bar
 - devise for users
 - ranking

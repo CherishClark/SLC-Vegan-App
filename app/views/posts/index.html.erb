@@ -1,5 +1,11 @@
 <h1> can you see my post index page?</h1>
 
+<%= form_tag("/posts", method: :get) do %>
+    Help
+  <%= text_field_tag :query %>
+  <%= submit_tag "Search" %>
+<% end %>
+
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -21,6 +27,11 @@
             </tr>
           </thead>
       <% @posts.each do |post| %>
+   <!--    <%# if params[:search] %>
+      <%#= @posts = Post.search(params[:search]) %>
+        <%# else %> -->
+
+   
           <tbody>
             <tr>
               <td>
@@ -41,6 +52,7 @@
               </td>  
             </tr>
           </tbody>
+          <%# end %>
           <% end %>
         </table>
       </div>
