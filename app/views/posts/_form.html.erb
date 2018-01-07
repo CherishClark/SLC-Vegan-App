@@ -1,0 +1,16 @@
+<%= form_with(model: @post, local:true) do |f| %>
+  <div class='field'>
+    <%= f.label :title %>
+    <%= f.text_field :title, id: :post_title %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :alternative_names %>
+    <%= f.text_field :alternative_names, id: :post_title %>
+  </div>  
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>

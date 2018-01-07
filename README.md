@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Users
+-Profile Image
+-Login from FB
+-Ranking History
+-Contact info
 
-Things you may want to cover:
+## Posts
+- TItle (the question)
+- suggestions
+- merge posts function
+- alternative names
 
-* Ruby version
+## Suggestions
+- resposne
+- ranking
+- user
+- link (gmaps, website, yelp)
+- history
 
-* System dependencies
+## views
+- all posts submitted
+- individual posts
+- unanswered posts
 
-* Configuration
+##homepage
+-search bar
+-top posts
+-newest unanswered questions
+-add request
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## to dos
+- CRUD for Posts
+- Search Bar
+- devise for users
+- ranking

@@ -1,9 +1,52 @@
 <h1> can you see my post index page?</h1>
-<div><% @posts.each do |post| %>
-        <%= post.title %>
-        <%= post.suggestions %>
-        <%= post.alternative_names %>
-          <hr>
-      <% end %>
 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>
+                Ranking
+              </th>
+              <th>
+                Title
+              </th>
+              <th>
+                Suggestions
+              </th>
+              <th>
+                Alternative Names
+              </th>
+            </tr>
+          </thead>
+      <% @posts.each do |post| %>
+          <tbody>
+            <tr>
+              <td>
+                1
+              </td>
+              <td>
+                <%= post.title %>
+              </td>
+              <td>
+                <%= post.suggestions %>
+              </td>
+              <td>
+                <%= post.alternative_names %>
+              </td> 
+               <td>
+                <%= link_to 'Edit', edit_post_path(post) %>
+                <%= link_to 'Delete', post, method: :delete, data: {confirm: 'you sure?'} %>
+              </td>  
+            </tr>
+          </tbody>
+          <% end %>
+        </table>
+      </div>
+  </div>
 </div>
+
+
+
+
